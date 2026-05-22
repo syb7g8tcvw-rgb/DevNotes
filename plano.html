@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevNotes - Plano</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">DevNotes</div>
+
+    <button class="menu-toggle" aria-label="Abrir menu">
+        ☰
+    </button>
+
+    <nav class="menu-nav">
+        <a href="index.html">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="javascript.html">JavaScript</a>
+        <a href="plano.html">Plano</a>
+    </nav>
+</header>
+
+<main>
+    <h1 class="titulo-secao">Plano de Estudos</h1>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Semana 1</h3>
+            <p>Revisar HTML básico, títulos, textos, links e imagens.</p>
+        </div>
+
+        <div class="card">
+            <h3>Semana 2</h3>
+            <p>Estudar CSS, cores, box model, flexbox e grid.</p>
+        </div>
+
+        <div class="card">
+            <h3>Semana 3</h3>
+            <p>Iniciar JavaScript, variáveis, funções e eventos.</p>
+        </div>
+    </div>
+    
+    <section class="modulo-bloco">
+
+    <h2>Minhas anotações</h2>
+
+    <p class="texto-ajuda">
+        Suas anotações serão salvas automaticamente.
+    </p>
+
+    <textarea
+        id="anotacaoInput"
+        class="textarea-anotacao"
+        placeholder="Digite sua anotação..."
+    ></textarea>
+
+    <button id="salvarAnotacao">
+        Salvar anotação
+    </button>
+
+    <div id="listaAnotacoes"></div>
+
+</section>
+    
+</main>
+
+<footer>
+    <p>DevNotes - Plano</p>
+</footer>
+
+<script src="js/script.js"></script>
+<!-- Script antigo removido: agora fica em js/script.js -->
+<script src="js/script.js"></script>
+</body>
+</html>
