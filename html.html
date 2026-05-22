@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevNotes - HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">DevNotes</div>
+
+    <button class="menu-toggle" aria-label="Abrir menu">
+        ☰
+    </button>
+
+    <nav class="menu-nav">
+        <a href="index.html">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="javascript.html">JavaScript</a>
+        <a href="plano.html">Plano</a>
+    </nav>
+</header>
+
+<div class="html-layout">
+
+    <aside class="html-sidebar">
+        <h2>HTML</h2>
+        <a href="#intro">Introdução</a>
+        <a href="#estrutura">Estrutura básica</a>
+        <a href="#titulos">Títulos e textos</a>
+        <a href="#links">Links</a>
+        <a href="#imagens">Imagens</a>
+        <a href="#listas">Listas</a>
+        <a href="#formularios">Formulários</a>
+        <a href="#tabelas">Tabelas</a>
+        <a href="#semantico">HTML Semântico</a>
+        <a href="#exercicios">Exercícios</a>
+        <a href="#flashcards">Flashcards</a>
+        <a href="#erros">Erros comuns</a>
+    </aside>
+
+    <main class="html-conteudo">
+
+        <section class="html-banner">
+            <span>Módulo completo</span>
+            <h1>HTML do básico ao avançado</h1>
+            <p>Aprenda a estrutura das páginas web, tags, formulários, tabelas, semântica e boas práticas.</p>
+        </section>
+
+        <section class="html-bloco" id="intro">
+            <h2>Bloco 1 — Introdução ao HTML</h2>
+            <p>HTML significa HyperText Markup Language. Ele é usado para estruturar o conteúdo de páginas web.</p>
+        </section>
+
+        <section class="html-bloco" id="estrutura">
+            <h2>Bloco 2 — Estrutura básica</h2>
+            <p>Todo documento HTML precisa de uma estrutura inicial.</p>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Minha página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    Conteúdo visível
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+
+        <section class="html-bloco" id="titulos">
+            <h2>Bloco 3 — Títulos e textos</h2>
+            <p>Use títulos para organizar a hierarquia da página.</p>
+
+<pre><code>&lt;h1&gt;Título principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;
+&lt;p&gt;Parágrafo de texto&lt;/p&gt;
+&lt;strong&gt;Texto importante&lt;/strong&gt;
+&lt;em&gt;Texto enfatizado&lt;/em&gt;</code></pre>
+        </section>
+
+        <section class="html-bloco" id="links">
+            <h2>Bloco 4 — Links</h2>
+            <p>Links servem para navegar entre páginas ou sites externos.</p>
+
+<pre><code>&lt;a href="index.html"&gt;Voltar para início&lt;/a&gt;
+&lt;a href="https://google.com" target="_blank"&gt;Abrir Google&lt;/a&gt;</code></pre>
+        </section>
+
+        <section class="html-bloco" id="imagens">
+            <h2>Bloco 5 — Imagens</h2>
+            <p>A tag img exibe imagens. O atributo alt melhora acessibilidade.</p>
+
+<pre><code>&lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;</code></pre>
+        </section>
+
+        <section class="html-bloco" id="listas">
+            <h2>Bloco 6 — Listas</h2>
+            <p>Listas podem ser ordenadas ou não ordenadas.</p>
+
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Primeiro passo&lt;/li&gt;
+    &lt;li&gt;Segundo passo&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        </section>
+
+        <section class="html-bloco" id="formularios">
+            <h2>Bloco 7 — Formulários</h2>
+            <p>Formulários coletam informações do usuário.</p>
+
+<pre><code>&lt;form&gt;
+    &lt;label&gt;Nome:&lt;/label&gt;
+    &lt;input type="text" placeholder="Digite seu nome"&gt;
+
+    &lt;label&gt;Mensagem:&lt;/label&gt;
+    &lt;textarea&gt;&lt;/textarea&gt;
+
+    &lt;button&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+        </section>
+
+        <section class="html-bloco" id="tabelas">
+            <h2>Bloco 8 — Tabelas</h2>
+            <p>Tabelas organizam dados em linhas e colunas.</p>
+
+<pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nome&lt;/th&gt;
+        &lt;th&gt;Idade&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Gui&lt;/td&gt;
+        &lt;td&gt;18&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        </section>
+
+        <section class="html-bloco" id="semantico">
+            <h2>Bloco 9 — HTML Semântico</h2>
+            <p>HTML semântico deixa o código mais organizado e profissional.</p>
+
+<pre><code>&lt;header&gt;&lt;/header&gt;
+&lt;nav&gt;&lt;/nav&gt;
+&lt;main&gt;&lt;/main&gt;
+&lt;section&gt;&lt;/section&gt;
+&lt;article&gt;&lt;/article&gt;
+&lt;footer&gt;&lt;/footer&gt;</code></pre>
+        </section>
+
+        <section class="html-bloco" id="exercicios">
+            <h2>Exercícios</h2>
+
+            <div class="html-exercicio">
+                <h3>1. Qual tag cria o maior título?</h3>
+                <p>A) &lt;p&gt;</p>
+                <p>B) &lt;h1&gt;</p>
+                <p>C) &lt;div&gt;</p>
+
+                <details>
+                    <summary>Ver resposta</summary>
+                    <p>Resposta: B) &lt;h1&gt;</p>
+                </details>
+            </div>
+
+            <div class="html-exercicio">
+                <h3>2. Qual tag cria um link?</h3>
+                <p>A) &lt;a&gt;</p>
+                <p>B) &lt;img&gt;</p>
+                <p>C) &lt;section&gt;</p>
+
+                <details>
+                    <summary>Ver resposta</summary>
+                    <p>Resposta: A) &lt;a&gt;</p>
+                </details>
+            </div>
+
+            <div class="html-exercicio">
+                <h3>3. Qual atributo melhora acessibilidade em imagens?</h3>
+                <p>A) href</p>
+                <p>B) src</p>
+                <p>C) alt</p>
+
+                <details>
+                    <summary>Ver resposta</summary>
+                    <p>Resposta: C) alt</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="html-bloco" id="flashcards">
+            <h2>Flashcards</h2>
+
+            <div class="html-flashcards">
+                <div class="html-flashcard">
+                    <h3>O que é HTML?</h3>
+                    <p>Linguagem de marcação usada para estruturar páginas web.</p>
+                </div>
+
+                <div class="html-flashcard">
+                    <h3>Para que serve o body?</h3>
+                    <p>Para colocar o conteúdo visível da página.</p>
+                </div>
+
+                <div class="html-flashcard">
+                    <h3>Para que serve o alt?</h3>
+                    <p>Para descrever imagens e melhorar acessibilidade.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="html-bloco html-erros" id="erros">
+            <h2>Lembretes do que eu mais erro</h2>
+
+            <ul>
+                <li>Não esquecer o &lt;!DOCTYPE html&gt;.</li>
+                <li>Fechar corretamente as tags.</li>
+                <li>Usar apenas um h1 principal por página.</li>
+                <li>Não esquecer o atributo alt nas imagens.</li>
+                <li>Links precisam do atributo href.</li>
+                <li>O conteúdo visível fica dentro do body.</li>
+            </ul>
+        </section>
+
+    </main>
+</div>
+
+<footer>
+    <p>DevNotes - HTML</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
